@@ -1,0 +1,52 @@
+sql_directory: sql
+
+collections:
+
+  environment:
+    - database
+    - instance
+    - os_stat
+    - parameters
+  storage:
+    - database_size
+    - tablespace_usage
+    - datafiles
+    - temp_usage
+    - undo_usage
+    - asm_diskgroups
+  configuration:
+    - memory
+    - processes
+    - optimizer
+    - cursor
+    - parallelism
+  server:
+    - cpu_memory
+    - filesystem
+    - load
+  performance:
+    - top_cpu
+    - top_elapsed
+    - top_io
+    - top_buffer_gets
+    - top_executions
+    - active_sessions
+    - wait_events
+  statistics:
+    - table_stats
+    - index_stats
+    - stale_stats
+    - histograms
+    - table_access
+    - column_skew
+  indexes:
+    - unused_indexes
+    - duplicate_indexes
+  stability:
+    - blocking_sessions
+    - long_transactions
+    - invalid_objects
+    - redo
+    - archive_log
+    - recovery_area
+    - database_status

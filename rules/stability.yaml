@@ -1,0 +1,49 @@
+# Database stability and operational risk thresholds
+
+blocking:
+
+  warning_count: 1
+  critical_wait_seconds: 300
+
+long_transactions:
+
+  warning_hours: 1
+  critical_hours: 4
+
+  undo_blocks:
+    warning: 100000
+    critical: 1000000
+
+invalid_objects:
+
+  warning_count: 1
+  critical_count: 50
+
+recovery_area:
+
+  warning_percent: 80
+  critical_percent: 90
+
+archive_logs:
+
+  warning_age_hours: 24
+
+redo:
+
+  warning_log_size_mb: 1024
+  critical_log_size_mb: 256
+
+database_status:
+
+  expected_open_mode: "READ WRITE"
+  expected_database_role: "PRIMARY"
+  expected_instance_status: "OPEN"
+  expected_database_status: "NORMAL"
+
+flashback:
+
+  warning_if_disabled: false
+
+force_logging:
+
+  warning_if_disabled: false

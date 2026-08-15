@@ -1,0 +1,34 @@
+# Optimizer statistics assessment
+
+stale_statistics:
+
+  warning_count: 1
+  critical_count: 50
+
+  age_days:
+    warning: 14
+    critical: 30
+
+table_statistics:
+
+  missing_statistics:
+    warning: 1
+
+  very_large_table_rows:
+    threshold: 10000000
+
+histograms:
+
+  warning_count: 100
+
+column_skew:
+
+  warning_density_ratio: 10
+  critical_density_ratio: 100
+
+  minimum_distinct_values: 2
+
+table_access:
+
+  high_sql_count: 50
+  very_high_sql_count: 200

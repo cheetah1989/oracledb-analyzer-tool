@@ -1,0 +1,28 @@
+# Index assessment rules
+
+unused_indexes:
+
+  minimum_monitoring_days: 30
+
+  large_index_gb:
+    warning: 10
+    critical: 50
+
+  very_large_index_gb:
+    critical: 100
+
+duplicate_indexes:
+
+  warning_count: 1
+
+index_health:
+
+  unusable:
+    critical_count: 1
+
+  invisible:
+    warning_count: 1
+
+  high_clustering_factor_ratio:
+    warning: 0.8
+    critical: 0.95
