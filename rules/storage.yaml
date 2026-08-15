@@ -1,0 +1,26 @@
+# Storage assessment thresholds
+# Percentages are expressed as whole numbers.
+
+tablespace:
+  critical_percent: 98
+  warning_percent: 95
+  info_percent: 85
+
+datafile:
+  critical_percent: 98
+  warning_percent: 95
+
+temp:
+  critical_percent: 95
+  warning_percent: 85
+
+undo:
+  critical_percent: 95
+  warning_percent: 85
+
+database_size:
+  info_growth_percent: 80
+
+asm:
+  critical_percent: 90
+  warning_percent: 80

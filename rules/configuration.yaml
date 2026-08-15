@@ -1,0 +1,41 @@
+# Oracle configuration assessment thresholds
+
+memory:
+
+  pga_target_percent_of_ram:
+    warning: 25
+    critical: 40
+
+  sga_target_percent_of_ram:
+    warning: 60
+    critical: 75
+
+processes:
+
+  utilization_warning_percent: 70
+  utilization_critical_percent: 85
+
+sessions:
+
+  utilization_warning_percent: 70
+  utilization_critical_percent: 85
+
+optimizer:
+
+  adaptive_plans:
+    expected: true
+
+  adaptive_statistics:
+    expected: false
+
+cursor:
+
+  open_cursors:
+    warning: 70
+    critical: 85
+
+parallelism:
+
+  default_degree:
+    warning: 8
+    critical: 16

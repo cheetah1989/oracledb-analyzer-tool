@@ -1,0 +1,47 @@
+# Performance assessment thresholds
+
+sql:
+
+  cpu_seconds:
+    critical: 300
+    warning: 100
+
+  elapsed_seconds:
+    critical: 600
+    warning: 300
+
+  executions:
+    high: 100000
+    very_high: 1000000
+
+  buffer_gets:
+    high: 100000000
+    very_high: 1000000000
+
+  disk_reads:
+    high: 1000000
+    very_high: 10000000
+
+  cpu_seconds_per_execution:
+    critical: 1
+    warning: 0.5
+
+  elapsed_seconds_per_execution:
+    critical: 5
+    warning: 2
+
+active_sessions:
+
+  long_running_seconds:
+    warning: 300
+    critical: 1800
+
+wait_events:
+
+  average_wait_ms:
+    warning: 10
+    critical: 100
+
+  wait_percentage:
+    warning: 10
+    critical: 25
